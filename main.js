@@ -5,9 +5,11 @@ function toggleParagraph(containerId) {
 
   if (paragraph.style.display === "none" || !paragraph.style.display) {
     paragraph.style.display = "block";
-    icon.src = "./assets/images/icon-minus.svg";
+    icon.classList.remove("fa-plus");
+    icon.classList.add("fa-minus");
   } else {
     paragraph.style.display = "none";
-    icon.src = "./assets/images/icon-plus.svg";
+    icon.classList.remove("fa-minus");
+    icon.classList.add("fa-plus");
   }
 }

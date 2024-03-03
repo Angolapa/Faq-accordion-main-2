@@ -25,7 +25,7 @@ body{
     background-color: var(--White);
     margin: 141px auto 30px;
     width: 327px;
-    min-height: 536px;
+    min-height: 528px;
     border-radius: 8px;
     padding: 24px;
 
@@ -50,7 +50,9 @@ body{
     position: absolute;
     right: 5px;
 }
-
+.main-container__s__details__div__p {
+    display: none;
+  }
 
 
 /*----------Footer------*/
