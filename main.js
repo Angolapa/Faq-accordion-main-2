@@ -5,11 +5,9 @@ function toggleParagraph(containerId) {
 
   if (paragraph.style.display === "none" || !paragraph.style.display) {
     paragraph.style.display = "block";
-    icon.classList.remove("fa-plus");
-    icon.classList.add("fa-minus");
+    icon.src = "./assets/images/icon-minus.svg"; // Reemplaza con la ruta correcta
   } else {
     paragraph.style.display = "none";
-    icon.classList.remove("fa-minus");
-    icon.classList.add("fa-plus");
+    icon.src = "./assets/images/icon-plus.svg"; // Reemplaza con la ruta correcta
   }
 }
