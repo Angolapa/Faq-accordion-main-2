@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --lightPink: hsl(275, 100%, 97%);
+    --grayishPurple: hsl(292, 16%, 49%);
+    --DarkPurple: hsl(292, 42%, 14%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--lightPink);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+}
+
+.main-container{
+    background-color: var(--White);
+    margin: 141px auto 30px;
+    width: 327px;
+    min-height: 536px;
+    border-radius: 8px;
+    padding: 24px;
+
+}
+.main-container__s__icon__title{
+    display: flex;
+    align-items: center;
+    
+}
+.main-container__s__div__title{
+    font-size: 0.8em;
+    margin: 24px 0 30px;
+}   
+
+.main-container__s__div{
+    font-size: 0.8em;
+    position: relative;
+    margin: 16px 0;
+
+}
+.main-container__s2__div__icon{
+    position: absolute;
+    right: 5px;
+}
+
+
+
+/*----------Footer------*/
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
