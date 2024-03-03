@@ -5,6 +5,7 @@
     --lightPink: hsl(275, 100%, 97%);
     --grayishPurple: hsl(292, 16%, 49%);
     --DarkPurple: hsl(292, 42%, 14%);
+    --purple: #8C34C9;
 }
 
 *{
@@ -30,28 +31,39 @@ body{
     padding: 24px;
 
 }
-.main-container__s__icon__title{
-    display: flex;
-    align-items: center;
-    
-}
-.main-container__s__div__title{
-    font-size: 0.8em;
-    margin: 24px 0 30px;
-}   
-
 .main-container__s__div{
     font-size: 0.8em;
     position: relative;
     margin: 16px 0;
+ }   
 
+.main-container__s__icon__title{
+    display: flex;
+    align-items: center;
+}
+
+.main-container__s__div__title{
+    font-size: 1.2em;
+    margin: 24px 0 30px;
+    width: 80%;
+    color: var(--DarkPurple);
+} 
+.main-container__s__div__title:hover{
+    cursor: pointer;
+    color: var(--purple);
 }
 .main-container__s2__div__icon{
     position: absolute;
     right: 5px;
 }
-.main-container__s__details__div__p {
+.main-container__s__div__p {
     display: none;
+    font-size: 1.1em;
+    color: var(--grayishPurple);
+  }
+.main-container__s__line{
+    border-color: transparent;
+    border-bottom-color: var(--lightPink);
   }
 
 
@@ -63,4 +75,21 @@ body{
 }
 .attribution a{ 
     color: hsl(228, 45%, 44%); 
+}
+
+/*-------------Desktop---------*/
+
+@media (min-width: 1044px){
+    body{
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+     }
+     .main-container{
+        width: 600px;
+    }
+    .main-container__s__icon__title{
+        font-size: 2em;
+    }
+
 }
