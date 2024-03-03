@@ -35,11 +35,18 @@ body{
     font-size: 0.8em;
     position: relative;
     margin: 16px 0;
+    
  }   
 
 .main-container__s__icon__title{
     display: flex;
     align-items: center;
+
+}
+.main-container__s__icon__title__img{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
 }
 
 .main-container__s__div__title{
@@ -87,9 +94,20 @@ body{
      }
      .main-container{
         width: 600px;
+        border-radius: 16px;
     }
     .main-container__s__icon__title{
         font-size: 2em;
     }
-
+    .main-container__s__icon__title__img{
+        width:36px;
+        height: 36px;
+    }
+    .main-container__s__div__title{
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    .main-container__s__div__p{
+        font-size: 1.3em;
+    }
 }
